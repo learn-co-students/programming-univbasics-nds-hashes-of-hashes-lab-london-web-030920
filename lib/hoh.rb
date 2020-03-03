@@ -1,3 +1,4 @@
+require 'pry'
 # Build a nested HoH of the classification of biological life on Earth based
 # on these commented-out snippets assigned to PORTION_1-PORTION_4. Return
 # that HoH as the return value for the method "naming_system."
@@ -42,7 +43,7 @@ label: "Kingdom",
        sub_category: {
          label: "Order",
          sub_category: {
-          # label: "Family",
+
          sub_category: {
            label: "Genus",
            sub_category: {
@@ -56,7 +57,7 @@ label: "Kingdom",
 
 }
 
-
+binding.pry
 end
 
 #label: "Kingdom", sub_category: {label: "Phylum",sub_category: {label: "Class"}}}
@@ -64,8 +65,8 @@ end
 # {label: "Family",sub_category: {label: "Genus"}}
 # {label: "Species",sub_category: nil}}
 
-
-
+#naming_system[:label][:sub_category][:sub_category]
+# label: "Family",
 
 
 
